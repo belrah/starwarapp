@@ -43,7 +43,7 @@ body {
     height: 100%;
     margin: 0 auto;
     margin-top: 50px;
-    border-radius: 15px;
+    border-radius: 28px;
     background-color: #f5f5f5;
 }
 
@@ -61,31 +61,33 @@ body {
     flex-direction: row;
     width: 80%;
     height: 80%;
-    /* margin: 0 auto; */
     margin-top: 20px;
     margin-left: 5px;
 }
 
 .hero-img img {
-    margin-top: 10px;
     height: 90%;
-    width: 200px;
+    width: 180px;
     border-radius: 20%;
+    margin: 0 4em;
 }
 
-h4.hero-name {
+
+/* h4.hero-name {
     padding-top: 20px;
-    margin-left: 5%;
-    width: 80%;
-    height: 80%;
-}
+    margin: 2em 4em;
+    width: 60%;
+    height: 60%;
+} */
 
 .hero-name:hover {
     color: #ee82ee;
 }
 
 #clickablename {
-    margin-top: 40px;
+    /* margin-top: 5em;
+    margin-left: 0; */
+    margin: 4em 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -101,7 +103,7 @@ h4.hero-name {
     .hero-img {
         margin-left: 0;
     }
-    .hero-name {
+    h4.hero-name {
         margin-left: 20px;
         width: 60%;
         height: 60%;
