@@ -1,90 +1,109 @@
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-	margin: 0 8px 8px 8px;
-	display: block;
-	font-family: 'Times New Roman', Times, serif;
+body {
+    display: block;
+    margin: 8px;
 }
 
-.head-div{
-	width: 100%;
-	height: 50px;
-	overflow: hidden;
-	background-color: violet;
-	position: sticky;
-	top: 0;
+#header {
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #ee82ee;
 }
 
-.p-div{
-	width: 73%;
-	margin: 0 auto;
+#headertext {
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 70%;
+    height: 70%;
 }
 
-.head-div p{
-	width: 100%;
-	height: 35px;
-	display: inline-block;
-	font-style: italic;
-	font-size: xx-large;
-	margin: 10px 0 5px;
-	text-align: center;
+#scroll-text {
+    font-size: 2.2em;
+    font-style: italic;
 }
 
-main{
-	display: block;
+:host {
+    display: inline-block;
+    overflow: hidden;
+    text-align: initial;
+    white-space: nowrap;
 }
 
-.super-heroes{
-	width: 80%;
-	margin: 2em 3em 2em 3em;
-	height: 35vh;
-}
-
-.heroes{
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-}
-
-
-.hero-img img{
+#lists {
+    width: 60%;
     height: 100%;
-    width: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+}
+
+.super-heroes {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.hero-img img {
+    margin-top: 10px;
+    height: 90%;
+    width: 200px;
     border-radius: 20%;
 }
 
-.hero-name h4{
-	width: 100%;
-	margin: 25px;
-	padding-left: 40px;
+h4.hero-name {
+    padding-top: 20px;
+    margin-left: 5%;
+    width: 80%;
+    height: 80%;
 }
 
-@media only screen and (min-width: 600px){
-	main{
-		width: 60vw;
-		margin: 0 auto;
-	}
+.hero-name:hover {
+    color: #ee82ee;
+}
 
-	.super-heroes{
-		width: 80%;
-		margin: 2em 3em 2em 3em;
-		height: 20vh;
-	}	
+#clickablename {
+    margin-top: 40px;
+}
 
-	.hero-img img{
-		height: 80%;
-		width: 170px;
-		border-radius: 20%;
-	}
-	
-
-	.hero-name h4{
-		width: 70%;
-		margin: 10px;
-		padding-left: 40px;
-	}
+@media only screen and (max-width: 600px) {
+    #lists {
+        width: 100%;
+    }
+    .hero-img img {
+        margin-top: 10px;
+        height: 80%;
+        width: 200px;
+        border-radius: 20%;
+    }
+    .hero-img {
+        margin-left: 0;
+    }
+    .hero-name {
+        margin-left: 20px;
+        width: 60%;
+        height: 60%;
+    }
 }
